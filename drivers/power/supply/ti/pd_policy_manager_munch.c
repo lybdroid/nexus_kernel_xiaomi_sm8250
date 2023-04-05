@@ -1189,7 +1189,7 @@ static void usbpd_pm_evaluate_src_caps(struct usbpd_pm *pdpm)
 				pdpm->apdo_selected_pdo,
 				pdpm->apdo_max_volt,
 				pdpm->apdo_max_curr);
-		if (pdpm->apdo_max_curr <= LOW_POWER_PPS_CURR_THR)
+		if (pdpm->apdo_max_curr <= XIAOMI_LOW_POWER_PPS_CURR_MAX)
 			pdpm->apdo_max_curr = XIAOMI_LOW_POWER_PPS_CURR_MAX;
 		if(pdpm->apdo_min_volt >= 5000 && pdpm->usb_psy){
 			//pdpm->enable_bypass = false;

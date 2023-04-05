@@ -5580,7 +5580,7 @@ static void usbpd_pdo_workfunc(struct work_struct *w)
 				if(pps_max_watts >120000000 && pps_max_watts < 130000000)
 					pps_max_watts = 120000000;
 				if (pps_max_watts < USBPD_WEAK_PPS_POWER) {
-					pd->pps_weak_limit = true;
+					//pd->pps_weak_limit = true;
 					usbpd_info(&pd->dev, "weak pps detect\n");
 				}
 			}
